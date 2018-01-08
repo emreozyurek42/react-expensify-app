@@ -60,7 +60,7 @@ export const setExpenses = (expenses) => ({
    expenses
 });
 
-export const startSetExpenses = () => {
+export const starSetExpenses = () => {
    return (dispatch, getState) => {
      const uid = getState().auth.uid;
      return database.ref(`users/${uid}/expenses`).once('value').then((snapshot) => {

@@ -145,7 +145,7 @@ test('should setup set expense action obect with data', ()=> {
 
 test('should fetch the expenses from firebase', (done) => {
    const store = createMockStore({defaultAuthState});
-   store.dispatch(startSetExpenses()).then(() => {
+   store.dispatch(starSetExpenses()).then(() => {
     const actions = store.getActions();
     expect(actions[0]).toEqual({
         type: 'SET_EXPENSES',
